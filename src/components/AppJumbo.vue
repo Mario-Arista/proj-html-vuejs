@@ -14,8 +14,8 @@ export default {
 
             <div class="jumbo">
 
-                <h3>Cinema Studio</h3>
-                <h2>Action and <br> inspire people</h2>
+                <h4>Cinema Studio</h4>
+                <h1>Action and <br> inspire people</h1>
                 <button>
                     <a href="">Read more</a>
                 </button>
@@ -64,7 +64,7 @@ export default {
             padding-left: 250px;
             padding-right: 250px;
 
-            h3 {
+            h4 {
                 font-size: 15px;
                 text-transform: uppercase;
                 color: $primary_white;
@@ -72,7 +72,7 @@ export default {
                 padding-bottom: 20px;
             }
 
-            h2 {
+            h1 {
                 font-size: 55px;
                 text-transform: uppercase;
                 color: $primary_white;
