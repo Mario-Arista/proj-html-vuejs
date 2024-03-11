@@ -1,7 +1,9 @@
+@use './variables.scss' as *;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  background-color: white;
+  background-color: $primary_white;
 
 }
 
@@ -16,4 +18,22 @@
 
 .hidden {
   display: none;
+}
+
+button {
+
+  background-color: $primary_white;
+  border: none;
+
+  padding: 18px 35px;
+
+  a {
+
+      text-decoration: none;
+      font-size: 12px;
+      text-transform: uppercase;
+
+      color: $primary_color;
+  }
+
 }

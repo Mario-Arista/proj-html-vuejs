@@ -56,7 +56,8 @@ export default {
 
 <template>
     <header>
-        <div class="container">
+        
+        <div class="row-nav">
 
             <!-- Logo Azienda  -->
             <img src="/img/logo.svg" alt="Logo Cinemato" class="logo">
@@ -98,12 +99,16 @@ export default {
 
 <style lang="scss">
 
+@use '../style/variables.scss' as *;
+
 header {
 
     width: 100%;
-    background-color: white;
+    background-color: $primary_white;
+    color: $primary_color;
 
-    .container {
+
+    .row-nav {
 
         display: flex;
         justify-content: space-between;
