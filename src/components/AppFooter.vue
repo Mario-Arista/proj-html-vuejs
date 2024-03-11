@@ -14,7 +14,7 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss">
 
 footer {
     width: 100%;

@@ -1,7 +1,55 @@
 <script>
+import ItemNav from './ItemNav.vue';
 
 export default {
     name: 'AppHeader',
+
+    components: {
+        ItemNav,
+    },
+
+    data() {
+        return {
+            navLinks: [
+                {
+                    title: 'home',
+                },
+                {
+                    title: 'blog',
+                },
+                {
+                    title: 'pages',
+                    submenu: [
+                        'qualcosa',
+                        'qualcosa',
+                        'qualcosa',
+                        'qualcosa',
+                    ],
+                },
+                {
+                    title: 'about',
+                },
+                {
+                    title: 'contacts',
+                },
+                {
+                    title: 'gallery',
+                },
+                {
+                    title: 'shop',
+                    submenu: [
+
+                        'qualcosa',
+                        'qualcosa',
+                        'qualcosa',
+                        'qualcosa',
+
+                    ]
+                },
+
+            ]
+        }
+    }
 }
 
 </script>
@@ -18,11 +66,11 @@ export default {
                 <!-- Qui creare v-for con prop -->
                 <ul>
                     <!-- Qui creare elemento a se in components  -->
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Ciao</li>
-                    <li>Fine</li>
-                    <li>Random</li>
+                    <ItemNav 
+                        v-for="currentLink in navLinks"
+                        :Menu="currentLink"
+                    >
+                    </ItemNav>
                 </ul>
             </nav>
 
@@ -48,7 +96,7 @@ export default {
     </header>
 </template>
 
-<style>
+<style lang="scss">
 
 header {
 
@@ -68,12 +116,16 @@ header {
 
         }
 
-        nav ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-            list-style-type: none;
+        nav {
+            flex-grow: 1;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                list-style-type: none;
+            }    
         }
 
         #right-part-header {

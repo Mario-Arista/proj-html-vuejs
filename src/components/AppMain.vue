@@ -12,7 +12,7 @@ export default {
     
 </template>
 
-<style>
+<style lang="scss">
 
 main {
     color: red;
