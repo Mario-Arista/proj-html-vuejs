@@ -1,5 +1,5 @@
 <script>
-import ItemNav from './ItemNav.vue';
+import ItemNav from './Items/ItemNav.vue';
 
 export default {
     name: 'AppHeader',
@@ -164,4 +164,4 @@ header {
             
         
 }
-</style>
+</style>./Items/ItemNav.vue

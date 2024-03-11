@@ -1,14 +1,14 @@
 <script>
 
 export default {
-    name: 'AppMain',
+    name: 'AppJumbo',
 }
 
 </script>
 
 <template>
 
-    <main>Main</main>
+    <main>Jumbo</main>
     
 </template>
 
