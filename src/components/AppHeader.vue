@@ -55,6 +55,7 @@ export default {
 </script>
 
 <template>
+
     <header>
         
         <div class="row-nav">
@@ -95,6 +96,7 @@ export default {
         </div>
         
     </header>
+    
 </template>
 
 <style lang="scss">

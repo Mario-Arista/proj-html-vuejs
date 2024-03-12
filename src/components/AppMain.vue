@@ -93,12 +93,15 @@ export default {
 
             
         </section>
-        
+
         <!-- SECTION  -->
         <SectionAboutUS></SectionAboutUS>
 
         <SectionWorks></SectionWorks>
+
+        <!-- SECTION  -->
         <SectionNumbers></SectionNumbers>
+
         <SectionTeam></SectionTeam>
         <SectionQuotes></SectionQuotes>
         <SectionBlog></SectionBlog>
@@ -115,7 +118,7 @@ main {
 
     .container-services {
 
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 115px 0px;
 

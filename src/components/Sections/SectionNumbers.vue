@@ -13,7 +13,7 @@ export default {
 
         <div class="row-numbers">
 
-            <div class="numbers">
+            <div id="numbers">
 
                 <div class="number-el">
                     <div class="result">150</div>
@@ -21,7 +21,7 @@ export default {
                 </div>
 
                 <div class="number-el">
-                    <div class="result">3 +</div>
+                    <div class="result">3+</div>
                     <div class="text-number">Our Projects</div>
                 </div>
 
@@ -59,15 +59,35 @@ export default {
     background-size: cover;
     background-position-y: 500px;
 
-    .numbers {
+    #numbers {
         display: flex;
-        max-width: 1200px;
-        gap: 220px;
+        gap: 200px;
+
+        max-width: 1400px;
 
         color: $primary_white;
 
         .number-el {
-            width: calc(100% / 4 - 220px / 4 * 3)
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            width: calc(100% / 4 - 200px / 4 * 3);
+
+            .result {
+                
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .text-number {
+                font-size: 10px;
+
+                text-transform: uppercase;
+                align-items: center;
+            }
 
         }
     }
