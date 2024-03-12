@@ -1,26 +1,29 @@
 <script>
-import ItemService from './Items/ItemService.vue';
+
 import SectionAboutUS from './Sections/SectionAboutUS.vue';
-import SectionWorks from './Sections/SectionWorks.vue';
 import SectionNumbers from './Sections/SectionNumbers.vue';
 import SectionTeam from './Sections/SectionTeam.vue';
 import SectionQuotes from './Sections/SectionQuotes.vue';
 import SectionBlog from './Sections/SectionBlog.vue';
 import SectionIcons from './Sections/SectionIcons.vue';
 
+import ItemService from './Items/ItemService.vue';
+import ItemWork from './Items/ItemWork.vue';
 
 export default {
     name: 'AppMain',
 
     components: { 
-        ItemService,  
+
         SectionAboutUS, 
-        SectionWorks, 
         SectionNumbers,
         SectionTeam,
         SectionQuotes,
         SectionBlog,
         SectionIcons,
+
+        ItemService,
+        ItemWork, 
     },
 
     data() {
@@ -65,6 +68,49 @@ export default {
 
 
 
+            ],
+
+            works: [
+                {
+                    image: '/img/work-1.jpg',
+                    title: 'Seventeenth Summer',
+                    type: 'Commercial, Music Video',
+
+                },
+                {
+                    image: '/img/work-2.jpg',
+                    title: 'A Message To Space',
+                    type: 'Short Film',
+
+                },
+                {
+                    image: '/img/work-3.jpg',
+                    title: 'The Most Beatiful Thing',
+                    type: 'Music Video',
+
+                },
+                {
+                    image: '/img/work-4.jpg',
+                    title: 'Permission To Speak',
+                    type: 'Documentary',
+
+                },
+                {
+                    image: '/img/work-5.jpg',
+                    title: 'Explore our Space',
+                    type: 'Film Noir',
+
+                },
+                {
+                    image: '/img/work-6.jpg',
+                    title: 'Film Production',
+                    type: 'Blaxploitation',
+
+                },
+
+
+
+
             ]
         }
     }
@@ -79,7 +125,7 @@ export default {
         <!-- Section con ITEM SERVICE -->
         <section class="container-services">
 
-            <h5>Pelicula Studio</h5>
+            <h4>Pelicula Studio</h4>
             <h2>This is what we do</h2>
 
             <div class="row-serv">
@@ -97,14 +143,37 @@ export default {
         <!-- SECTION  -->
         <SectionAboutUS></SectionAboutUS>
 
-        <SectionWorks></SectionWorks>
+         <!-- Section con ITEM SERVICE -->
+        <section class="container-works">
+
+            <h4>Your Watchlist</h4>
+            <h2>Best Hits Movies</h2>
+
+            <div class="row-work">
+
+                <ItemWork 
+                v-for="currentWork in works"
+                :SingleWork="currentWork"
+                ></ItemWork>
+
+            </div>
+
+
+        </section>
 
         <!-- SECTION  -->
         <SectionNumbers></SectionNumbers>
 
+        <!-- SECTION  -->
         <SectionTeam></SectionTeam>
+
+        <!-- SECTION  -->
         <SectionQuotes></SectionQuotes>
+
+
         <SectionBlog></SectionBlog>
+
+        <!-- SECTION  -->
         <SectionIcons></SectionIcons>
 
     </main>
@@ -116,13 +185,14 @@ export default {
 main {
     width: 100%;
 
-    .container-services {
+    .container-services,
+    .container-works {
 
         max-width: 1400px;
         margin: 0 auto;
         padding: 115px 0px;
 
-        h5 {
+        h4 {
             text-transform: uppercase;
             text-align: center;
             font-size: 10px;
@@ -143,6 +213,13 @@ main {
             display: flex;
             flex-wrap: wrap;
             gap: 50px 100px;
+        }
+
+        .row-work {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px 30px;
+
         }
 
     }
