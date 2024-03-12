@@ -55,7 +55,7 @@ export default {
 
     height: 310px;
 
-    background-image: url('../../../public/img/section-numbers-background.jpg');
+    background-image: url('/img/section-numbers-background.jpg');
     background-size: cover;
     background-position-y: 500px;
 

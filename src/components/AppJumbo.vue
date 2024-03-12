@@ -23,10 +23,10 @@ export default {
                 <!-- Frecce per funzionamento slider -->
                 <div class="slider-arrows">
                     <div class="arrow-left-slider">
-                        <img class="arrow" src="/public/img/icon-left-arrow.svg" alt="left arrow">
+                        <img class="arrow" src="/img/icon-left-arrow.svg" alt="left arrow">
                     </div>
                     <div class="arrow-right-slider">
-                        <img class="arrow" src="/public/img/icon-right-arrow.svg" alt="left arrow">
+                        <img class="arrow" src="/img/icon-right-arrow.svg" alt="left arrow">
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@ export default {
 
     height: 800px;
 
-    background-image: url('/public/img/jumbo-3.jpg');
+    background-image: url('/img/jumbo-3.jpg');
     background-size: cover;
 
     .jumbo {

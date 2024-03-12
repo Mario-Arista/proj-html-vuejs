@@ -85,10 +85,10 @@ export default {
                 </div>
 
                 <div class="socials">
-                    <img src="/public/img/icon-facebook.svg" alt="icona facebook">
-                    <img src="/public/img/icon-twitter.svg" alt="icona facebook">
-                    <img src="/public/img/icon-youtube.svg" alt="icona facebook">
-                    <img src="/public/img/icon-instagram.svg" alt="icona facebook">
+                    <img src="/img/icon-facebook.svg" alt="icona facebook">
+                    <img src="/img/icon-twitter.svg" alt="icona facebook">
+                    <img src="/img/icon-youtube.svg" alt="icona facebook">
+                    <img src="/img/icon-instagram.svg" alt="icona facebook">
                 </div>
 
             </div>

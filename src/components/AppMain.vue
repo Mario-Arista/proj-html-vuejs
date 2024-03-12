@@ -4,11 +4,11 @@ import SectionAboutUS from './Sections/SectionAboutUS.vue';
 import SectionNumbers from './Sections/SectionNumbers.vue';
 import SectionTeam from './Sections/SectionTeam.vue';
 import SectionQuotes from './Sections/SectionQuotes.vue';
-import SectionBlog from './Sections/SectionBlog.vue';
 import SectionIcons from './Sections/SectionIcons.vue';
 
 import ItemService from './Items/ItemService.vue';
 import ItemWork from './Items/ItemWork.vue';
+import ItemArticleBlog from './Items/ItemArticleBlog.vue';
 
 export default {
     name: 'AppMain',
@@ -19,15 +19,16 @@ export default {
         SectionNumbers,
         SectionTeam,
         SectionQuotes,
-        SectionBlog,
         SectionIcons,
 
         ItemService,
-        ItemWork, 
+        ItemWork,
+        ItemArticleBlog,
     },
 
     data() {
         return {
+            // Array contenente elementi per la sezione dei servizi
             services: [
                 {
                     image: '/img/service-1.svg',
@@ -70,6 +71,7 @@ export default {
 
             ],
 
+            // Array contenente elementi per la sezione dei lavori
             works: [
                 {
                     image: '/img/work-1.jpg',
@@ -111,7 +113,35 @@ export default {
 
 
 
-            ]
+            ],
+
+            // Array contenente elementi per la sezione dei servizi
+            articles: [
+                {
+                    image: '/img/blog-1.jpg',
+                    info: 'November 06, 2021 By Admin',
+                    title: 'Recap your latest company event',
+                    recap: 'Suspendisse dictum tampor. Ut non faucibus arcu, id elementum est. Suspendisse sed.',
+
+                },
+                {
+                    image: '/img/blog-2.jpg',
+                    info: 'MAy 06, 2022 By Admin',
+                    title: 'How to edit a film score to serve',
+                    recap: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do aiusmod tempor incididunt ut.',
+
+                },
+                {
+                    image: '/img/blog-3.jpg',
+                    info: 'MAy 07, 2022 By Admin',
+                    title: 'Are you ready to make it awesome',
+                    recap: 'Design is our playground. While we create an awesome experience, we like having fun. No animals.',
+
+                },
+
+
+
+            ],
         }
     }
 }
@@ -143,7 +173,7 @@ export default {
         <!-- SECTION  -->
         <SectionAboutUS></SectionAboutUS>
 
-         <!-- Section con ITEM SERVICE -->
+        <!-- Section con ITEM WORK -->
         <section class="container-works">
 
             <h4>Your Watchlist</h4>
@@ -170,8 +200,23 @@ export default {
         <!-- SECTION  -->
         <SectionQuotes></SectionQuotes>
 
+         <!-- Section con ITEM ARTICLE -->
+        <section class="container-services">
 
-        <SectionBlog></SectionBlog>
+            <h4>Latest News</h4>
+            <h2>Articles Updated Daily</h2>
+
+            <div class="row-blog">
+
+                <ItemArticleBlog 
+                v-for="article in articles"
+                :BlogArticles="article"
+                ></ItemArticleBlog>
+
+            </div>
+
+
+        </section>
 
         <!-- SECTION  -->
         <SectionIcons></SectionIcons>
@@ -186,7 +231,8 @@ main {
     width: 100%;
 
     .container-services,
-    .container-works {
+    .container-works,
+    .row-blog {
 
         max-width: 1400px;
         margin: 0 auto;
@@ -220,6 +266,11 @@ main {
             flex-wrap: wrap;
             gap: 50px 30px;
 
+        }
+
+        .row-blog {
+            display: flex;
+            gap: 0px 30px;
         }
 
     }
