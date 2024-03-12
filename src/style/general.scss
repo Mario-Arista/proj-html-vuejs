@@ -16,16 +16,24 @@
 
 /* Common style */
 
+.container-fluid {
+  width: 100%;
+  padding: 0px 8px;
+}
+
 .hidden {
   display: none;
 }
+
+// Buttons
 
 button {
 
   background-color: $primary_white;
   border: none;
 
-  padding: 18px 35px;
+  width: 180px;
+  height: 50px;
 
   a {
 

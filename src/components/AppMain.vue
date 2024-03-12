@@ -93,8 +93,10 @@ export default {
 
             
         </section>
-
+        
+        <!-- SECTION  -->
         <SectionAboutUS></SectionAboutUS>
+
         <SectionWorks></SectionWorks>
         <SectionNumbers></SectionNumbers>
         <SectionTeam></SectionTeam>

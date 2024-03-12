@@ -8,7 +8,7 @@ export default {
 
 <template>
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row-jumbo">
 
@@ -43,81 +43,77 @@ export default {
 
 @use '../style/variables.scss' as *;
 
-.container {
-    width: 100%;
-    padding: 0px 8px;
 
-    .row-jumbo {
-        position: relative;
 
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+.row-jumbo {
+    position: relative;
 
-        height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
-        background-image: url('/public/img/jumbo-3.jpg');
-        background-image: url('/public/img/jumbo-3.jpg');
-        background-size: cover;
+    height: 800px;
 
-        .jumbo {
-            padding-left: 250px;
-            padding-right: 250px;
+    background-image: url('/public/img/jumbo-3.jpg');
+    background-size: cover;
 
-            h4 {
-                font-size: 15px;
-                text-transform: uppercase;
-                color: $primary_white;
+    .jumbo {
+        padding-left: 250px;
+        padding-right: 250px;
 
-                padding-bottom: 20px;
-            }
+        h4 {
+            font-size: 15px;
+            text-transform: uppercase;
+            color: $primary_white;
 
-            h1 {
-                font-size: 55px;
-                text-transform: uppercase;
-                color: $primary_white;
+            padding-bottom: 20px;
+        }
 
-                padding-bottom: 60px;
+        h1 {
+            font-size: 55px;
+            text-transform: uppercase;
+            color: $primary_white;
 
-            }
-            
+            padding-bottom: 60px;
 
-            .slider-arrows {
-                position: absolute;
-                left: 0px;
-                top: 50%;
-                transform: translateY(-50%);
+        }
+        
+        .slider-arrows {
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 100%;
+
+            padding: 0px 10px;
+
+            .arrow-left-slider, 
+            .arrow-right-slider {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
 
-                width: 100%;
+                width: 40px;
+                height: 40px;
+                background-color: rgba(0, 0, 0, 0.584);
 
-                padding: 0px 10px;
+                .arrow {
+                    width: 10px;
+                    filter: invert(1.85);
 
-                .arrow-left-slider, 
-                .arrow-right-slider {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    width: 40px;
-                    height: 40px;
-                    background-color: rgba(0, 0, 0, 0.584);
-
-                    .arrow {
-                        width: 10px;
-                        filter: invert(1.85);
-
-                    }
                 }
-
             }
+
         }
     }
-
 }
+
+
 
 
 
