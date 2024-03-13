@@ -2,6 +2,38 @@
 
 export default {
     name: 'AppJumbo',
+
+
+    data() {
+        return {
+            // variabile per la slide attiva
+            slideCounter: 0,
+
+            // Array per immagini di background
+
+            backgroundImages: [
+                '/img/jumbo-1.jpg',
+                '/img/jumbo-2.jpg',
+                '/img/jumbo-3.jpg'
+            ]
+        };
+    },
+    methods: {
+
+        // Metodo per cambiare solo immagine di Background (aumentare)
+        NextSlide() {
+            
+            // uso il modulo in maniera che il contatore 
+            // rimanga sempre all'interno dei limiti dell'array delle immagini
+            this.slideCounter = (this.slideCounter + 1) % this.backgroundImages.length;
+        },
+
+        // Metodo per cambiare solo immagine di Background (decrementare)
+        PreviousSlide() {
+            this.slideCounter = (this.slideCounter - 1 + this.backgroundImages.length) % this.backgroundImages.length;
+        }
+  }
+
 }
 
 </script>
@@ -10,23 +42,29 @@ export default {
 
     <div class="container">
 
-        <div class="row-jumbo">
+        <div 
+            class="row-jumbo"
+            :style="{ backgroundImage: 'url(' + backgroundImages[slideCounter] + ')' }"
+        >
 
             <div class="jumbo">
 
-                <!--  -->
-                <h3>Cinema Studio</h3>
-                <h1>Action and <br> inspire people</h1>
-                <button>
-                    <a href="">Read more</a>
-                </button>
+                <!-- INFO + CTA JUMBO  -->
+                <div>
+                    <h3>Cinema Studio</h3>
+                    <h1>Action and <br> inspire people</h1>
+                    <button>
+                        <a href="">Read more</a>
+                    </button>
+                </div>
+
 
                 <!-- Frecce per funzionamento slider -->
-                <div class="slider-arrows">
+                <div class="slider-arrows" @click="NextSlide()">
                     <div class="arrow-left-slider">
                         <img class="arrow" src="/img/icon-left-arrow.svg" alt="left arrow">
                     </div>
-                    <div class="arrow-right-slider">
+                    <div class="arrow-right-slider" @click="PreviuosSlide()">
                         <img class="arrow" src="/img/icon-right-arrow.svg" alt="left arrow">
                     </div>
                 </div>
@@ -54,8 +92,6 @@ export default {
 
     height: 800px;
     
-
-    background-image: url('/img/jumbo-3.jpg');
     background-size: cover;
 
 
