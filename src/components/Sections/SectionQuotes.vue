@@ -169,11 +169,13 @@ export default {
 .icon-to-change {
     
     display: flex;
-    gap: 10px;
+    gap: 15px;
 
     i  {
 
     font-size: 10px;
+
+    cursor: pointer;
 
     }   
 

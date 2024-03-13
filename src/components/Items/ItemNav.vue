@@ -40,6 +40,8 @@ export default {
     display: flex;
     align-items: center;
 
+    cursor: pointer;
+
     &:hover {
         .sub-nav {
             display: flex;

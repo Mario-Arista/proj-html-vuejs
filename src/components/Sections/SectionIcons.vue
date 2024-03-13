@@ -60,6 +60,10 @@ export default {
 
         img {
             max-width: 140px;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
 
     }

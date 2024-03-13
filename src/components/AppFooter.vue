@@ -197,6 +197,7 @@ footer {
 
                 &:hover {
                     color: $primary_white;
+                    cursor: pointer;
                 }
 
 
@@ -209,6 +210,7 @@ footer {
 
                 &:hover {
                     color: $primary_white;
+                    cursor: pointer;
                 }
                 
             }

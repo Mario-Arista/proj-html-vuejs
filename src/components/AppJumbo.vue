@@ -14,7 +14,9 @@ export default {
             backgroundImages: [
                 '/img/jumbo-1.jpg',
                 '/img/jumbo-2.jpg',
-                '/img/jumbo-3.jpg'
+                '/img/jumbo-3.jpg',
+                '/img/jumbo-4.jpg',
+
             ]
         };
     },
@@ -124,6 +126,8 @@ export default {
                 width: 40px;
                 height: 40px;
                 background-color: rgba(0, 0, 0, 0.584);
+
+                cursor: pointer;
 
                 .arrow {
                     width: 10px;

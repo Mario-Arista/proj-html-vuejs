@@ -16,20 +16,26 @@ export default {
 <template>
 
     <div class="work">
-        <img :src="SingleWork.image" :alt="SingleWork.title">
-        <div>{{ SingleWork.title }}</div>
+        <div>
+            <img :src="SingleWork.image" :alt="SingleWork.title">
+        </div>
+        <div class="title-work">{{ SingleWork.title }}</div>
         <span>{{ SingleWork.type }}</span>
+
     </div>
 
     
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 @use '../../style/variables.scss' as *;
 
+
 .work {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,10 +44,18 @@ export default {
 
     img {
         width: 100%;
-        padding-bottom: 30px;
+        padding-bottom: 25px;
+
+        cursor: pointer;
+
+        &:hover {
+            filter: grayscale(1.5);
+
+        }
 
     }
-    div {
+
+    .title-work {
         text-transform: uppercase;
         font-size: 14px;
         font-weight: bold;
@@ -57,5 +71,7 @@ export default {
     }
 
 }
+
+
 
 </style>

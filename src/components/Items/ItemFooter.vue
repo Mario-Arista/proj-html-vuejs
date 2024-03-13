@@ -45,6 +45,7 @@ export default {
 
             &:hover {
                 color: $primary_white;
+                cursor: pointer;
             }
         }
     }
