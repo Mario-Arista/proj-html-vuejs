@@ -42,6 +42,10 @@ export default {
         font-size: 14px;
         color: #cccccc;
         padding-bottom: 15px;
+
+            &:hover {
+                color: $primary_white;
+            }
         }
     }
 }

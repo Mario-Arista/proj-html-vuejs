@@ -22,10 +22,9 @@ export default {
                 {
                     title: 'pages',
                     submenu: [
-                        'qualcosa',
-                        'qualcosa',
-                        'qualcosa',
-                        'qualcosa',
+                        'SEVICES',
+                        'OUR WORK FLOW',
+                        'VIDEO THUMNAIL TYPE',
                     ],
                 },
                 {
@@ -41,10 +40,9 @@ export default {
                     title: 'shop',
                     submenu: [
 
-                        'qualcosa',
-                        'qualcosa',
-                        'qualcosa',
-                        'qualcosa',
+                    'RENT EQUIPMENT',
+                    'CONSULTING',
+                    'VIDEO ADS',
 
                     ]
                 },
@@ -108,6 +106,7 @@ export default {
 header {
 
     width: 100%;
+    height: 70px;
     background-color: $primary_white;
     color: $primary_color;
 
@@ -117,6 +116,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100%;
         
 
         .logo {
@@ -133,10 +133,12 @@ header {
 
             ul {
                 display: flex;
-                align-items: center;
+                align-items: stretch;
                 justify-content: center;
                 gap: 40px;
                 list-style-type: none;
+
+                height: 100%;
             }    
         }
 
@@ -177,4 +179,4 @@ header {
             
         
 }
-</style>./Items/ItemNav.vue
+</style>

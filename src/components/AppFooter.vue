@@ -195,6 +195,10 @@ footer {
                 font-size: 14px;
                 line-height: 30px;
 
+                &:hover {
+                    color: $primary_white;
+                }
+
 
             }
 
@@ -202,6 +206,11 @@ footer {
                 text-decoration: none;
                 color: #CCCCCC;
                 font-size: 14px;
+
+                &:hover {
+                    color: $primary_white;
+                }
+                
             }
         }
 

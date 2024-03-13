@@ -11,7 +11,7 @@ export default {
 
     <section class="container">
 
-        <div class="row-about">
+        <div class="row-about parallax">
 
             <div class="about">
 

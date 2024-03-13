@@ -11,7 +11,7 @@ export default {
 
     <section class="container for-height">
 
-        <div class="row-quote">
+        <div class="row-quote parallax">
 
             <div class="quote">
 
@@ -25,11 +25,15 @@ export default {
                     </div>
 
                 </div>
+
                 <div class="icon-to-change">
-                        <img src="/img/icon-hamburger.svg" alt="">
-                        <img src="/img/icon-hamburger.svg" alt="">
-                        <img src="/img/icon-hamburger.svg" alt="">
+
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+
                 </div>
+
             </div>
 
         </div>
@@ -52,14 +56,10 @@ export default {
     width: 100%;
     height: 600px;
 
-    // Stile non come da progetto, ma mi da troppo fastidio vederlo in quel modo
     background-image: url('/img/quote-background.jpg');
     background-size: cover;
     background-position: center center;
 
-    // Stile come da file commentato
-    // background-position-y: 250px;
-    // background-position-x: 0px;
 
     .quote {
         display: flex;
@@ -113,16 +113,23 @@ export default {
 
             }
 
-            .icon-to-change {
-                
-                img {
-                    filter: invert(1.85);
-                }
-                    
-            }
         }
     }
 
+
+}
+
+
+.icon-to-change {
+    
+    display: flex;
+    gap: 10px;
+
+    i  {
+
+    font-size: 10px;
+
+    }   
 
 }
 </style>
