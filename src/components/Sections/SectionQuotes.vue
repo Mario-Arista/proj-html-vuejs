@@ -3,6 +3,53 @@
 export default {
     name: 'SectionQuotes',
 
+    data() {
+        return {
+
+            // Indice della citazione attualmente visualizzata
+            currentIndex: 0, 
+            
+            // Array con elementi per partner
+            partnersQuotes: [
+                {
+                    src: '/img/quote-img-1.jpg',
+                    fullName: 'Jasmine Figueroa',
+                    job: 'Designer',
+                    quote: 'Curabitur bibendum ex ut blandit viverra. Nunc lobortis mi dui, id Etiam tempar sit amet metus in bibendum. Nunc eros risus, pellentesque a augue pellentesque fringilla eget mi eu mollis. Mauris comodo.',
+                },
+                {
+                    src: '/img/quote-img-2.jpg',
+                    fullName: 'Sarah Anderson',
+                    job: 'Creative',
+                    quote: 'Love’s not Time’s fool, though rosy lips and cheeks, Within his bending sickle’s compass come; Love alters not with his brief hours and weeks, But bears it out even to the edge of doom.',
+                },
+                {
+                    src: '/img/quote-img-3.jpg',
+                    fullName: 'John Simpson',
+                    job: 'Cameraman',
+                    quote: 'Curabitur bibendum ex ut blandit viverra. Nunc lobortis mi dui, id Etiam tempar sit amet metus in bibendum. Testo non a caso, perchè sono bello bello in modo assurdo e Derek Zoolander è il mio mito. Una cosa importante da sottolineare.',
+                },
+            ]
+        };
+        
+    },
+
+    methods: {
+
+        // Metodo per cambiare la citazione alla numero uno
+        QuoteNumberOne() {
+            this.currentIndex = 0;
+        },
+        // Metodo per cambiare la citazione alla numero due
+        QuoteNumberTwo() {
+            this.currentIndex = 1;
+        },
+        // Metodo per cambiare la citazione alla numero tre
+        QuoteNumberThree() {
+            this.currentIndex = 2;
+        }
+    }
+
 }
 
 </script>
@@ -16,21 +63,20 @@ export default {
             <div class="quote">
 
                 <img class="quote-icon" src="/img/quote-icon.svg" alt="icona quote">
-                <p>Curabitur bibendum ex ut blandit viverra. Nunc lobortis mi dui, id Etiam tempar sit amet metus in bibendum. Nunc eros risus, pellentesque a augue pellentesque fringilla eget mi eu mollis. Mauris comodo.</p>
+                <p>{{ partnersQuotes[currentIndex].quote }}</p>
                 <div class="single-partner">
-                    <img src="/img/quote-img-1.jpg" alt="Foto di Jasmine Figueroa">
+                    <img :src="partnersQuotes[currentIndex].src" :alt="partnersQuotes[currentIndex].name">
                     <div class="info-partner">
-                        <div class="name-partner">Jasmine Figueroa</div>
-                        <div class="position-partner">Designer</div>
+                        <div class="name-partner">{{ partnersQuotes[currentIndex].fullName }}</div>
+                        <div class="position-partner">{{ partnersQuotes[currentIndex].job }}</div>
                     </div>
-
                 </div>
 
                 <div class="icon-to-change">
 
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle" @click="QuoteNumberOne()"></i>
+                    <i class="fa-solid fa-circle" @click="QuoteNumberTwo()"></i>
+                    <i class="fa-solid fa-circle" @click="QuoteNumberThree()"></i>
 
                 </div>
 

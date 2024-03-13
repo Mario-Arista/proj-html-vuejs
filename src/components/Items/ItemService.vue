@@ -39,6 +39,11 @@ export default {
         max-width: 80px;
         height: 80px;
 
+        &:hover {
+            transform: scale(1.5);
+            
+        }
+
     }
     span {
         text-transform: uppercase;
