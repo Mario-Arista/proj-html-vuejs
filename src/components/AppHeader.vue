@@ -61,7 +61,10 @@ export default {
         <div class="row-nav">
 
             <!-- Logo Azienda  -->
-            <img src="/img/logo.svg" alt="Logo Cinemato" class="logo">
+            <div class="logo">
+                <img src="/img/logo.svg" alt="Logo Cinemato" >
+            </div>
+            
 
             <!-- menu -->
             <nav>
@@ -116,13 +119,15 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
+        height: 100%; 
         
 
         .logo {
+            display: flex;
+            align-items: center;
 
             width: 185px;
-            padding: 25px 40px;
+            padding-left: 40px;
 
         }
 
@@ -130,15 +135,18 @@ header {
 
         nav {
             flex-grow: 1;
+            height: 100%; 
+
 
             ul {
                 display: flex;
-                align-items: stretch;
+                align-items: center;
                 justify-content: center;
                 gap: 40px;
                 list-style-type: none;
 
                 height: 100%;
+
             }    
         }
 

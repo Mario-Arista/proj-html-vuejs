@@ -17,7 +17,7 @@ export default {
 <template>
 
     <!-- VOCI MENU PRINCIPALE -->
-    <li>
+    <li class="single-link-in-nav">
         <div class="voice-menu">
             {{ Menu.title }}
             <img v-if="Menu.submenu" src="/public/img/icon-arrow-down.svg" alt="arrow-down icon">
@@ -35,6 +35,19 @@ export default {
 
 // STYLE VOCI MENU
 
+.single-link-in-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        .sub-nav {
+            display: flex;
+
+        }
+    }
+}
+
 .voice-menu {
     position: relative;
 
@@ -46,11 +59,16 @@ export default {
     font-family: "Roboto Condensed", sans-serif;
     letter-spacing: 1px;
 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
 
     img {
         position: absolute;
-        bottom: -2px;
+        bottom: 25px;
         right: -15px;
+
         width: 15px;
     }
 }
@@ -76,9 +94,6 @@ export default {
 
 }
 
-.voice-menu:hover + .sub-nav {
-   display: flex;
-}
 
 .voice-sub-menu {
     display: flex;
@@ -97,6 +112,10 @@ export default {
     font-weight: bold;
 
     color: white;
+
+    &:hover {
+        color: #cccccc;
+    }
 }
 
 </style>

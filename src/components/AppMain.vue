@@ -126,20 +126,18 @@ export default {
                 },
                 {
                     image: '/img/blog-2.jpg',
-                    info: 'MAy 06, 2022 By Admin',
+                    info: 'May 06, 2022 By Admin',
                     title: 'How to edit a film score to serve',
                     recap: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do aiusmod tempor incididunt ut.',
 
                 },
                 {
                     image: '/img/blog-3.jpg',
-                    info: 'MAy 07, 2022 By Admin',
+                    info: 'May 07, 2022 By Admin',
                     title: 'Are you ready to make it awesome',
                     recap: 'Design is our playground. While we create an awesome experience, we like having fun. No animals.',
 
                 },
-
-
 
             ],
         }
