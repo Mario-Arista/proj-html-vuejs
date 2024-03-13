@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-
+    
     <ul id="footer-item">
         <li>
             <div class="title-footer"> {{ Links.title }}</div>
@@ -30,17 +30,20 @@ export default {
 
 @use '../../style/variables.scss' as *;
 
-#footer-item li {
+#footer-item {
 
-    list-style-type: none;
-    text-decoration: none;
+    li {
 
-    &.link-grey {
+        list-style-type: none;
+        text-decoration: none;
+
+
+        &.link-grey {
         font-size: 14px;
         color: #cccccc;
         padding-bottom: 15px;
+        }
     }
-
 }
 
 </style>

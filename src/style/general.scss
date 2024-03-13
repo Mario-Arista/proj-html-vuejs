@@ -1,7 +1,7 @@
 @use './variables.scss' as *;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 
   background-color: $primary_white;
 
@@ -16,7 +16,7 @@
 
 /* Common style */
 
-.container-fluid {
+.container {
   width: 100%;
   padding: 0px 8px;
 }
@@ -24,6 +24,47 @@
 .hidden {
   display: none;
 }
+
+// Titoli
+
+// JUMBO
+
+h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: $primary_white;
+
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+  color: $primary_white;
+
+  padding-bottom: 60px;
+
+}
+
+// Tutti altri elementi
+
+h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  padding-bottom: 35px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 2px;
+
+  padding-bottom: 60px;
+
+}
+
 
 // Buttons
 
@@ -35,13 +76,23 @@ button {
   width: 180px;
   height: 50px;
 
+  &:hover {
+    background-color: $primary_color;
+    a {
+      color: $primary_white;
+    }
+  }
+
   a {
 
-      text-decoration: none;
-      font-size: 12px;
-      text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
-      color: $primary_color;
+
+    color: $primary_color;
+
   }
 
 }

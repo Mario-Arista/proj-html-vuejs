@@ -10,6 +10,8 @@ export default {
 
     data() {
         return {
+
+            // ARRAY PER POPOLARE NEL ITEMNAV LE VODI DEL MENU E SUBMENU
             navLinks: [
                 {
                     title: 'home',
@@ -65,9 +67,9 @@ export default {
 
             <!-- menu -->
             <nav>
-                <!-- Qui creare v-for con prop -->
+                
                 <ul>
-                    <!-- Qui creare elemento a se in components  -->
+                    <!-- elemento ITEM NAV  -->
                     <ItemNav 
                         v-for="currentLink in navLinks"
                         :Menu="currentLink"
@@ -116,12 +118,15 @@ header {
         justify-content: space-between;
         align-items: center;
         
+
         .logo {
 
             width: 185px;
             padding: 25px 40px;
 
         }
+
+        // STILE NAV CON ITEM
 
         nav {
             flex-grow: 1;
@@ -135,6 +140,7 @@ header {
             }    
         }
 
+        // PARTE CON SOCIAL AND SEARCH
         #right-part-header {
 
             display: flex;

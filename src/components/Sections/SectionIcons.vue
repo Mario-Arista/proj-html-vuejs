@@ -9,7 +9,7 @@ export default {
 
 <template>
 
-    <section class="container-fluid">
+    <section class="container">
 
         <div class="row-icons">
 

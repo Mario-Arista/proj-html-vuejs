@@ -8,13 +8,14 @@ export default {
 
 <template>
 
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="row-jumbo">
 
             <div class="jumbo">
 
-                <h4>Cinema Studio</h4>
+                <!--  -->
+                <h3>Cinema Studio</h3>
                 <h1>Action and <br> inspire people</h1>
                 <button>
                     <a href="">Read more</a>
@@ -50,34 +51,20 @@ export default {
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 
     height: 800px;
+    
 
     background-image: url('/img/jumbo-3.jpg');
     background-size: cover;
 
+
     .jumbo {
+        max-width: 1400px;
         padding-left: 250px;
-        padding-right: 250px;
-
-        h4 {
-            font-size: 15px;
-            text-transform: uppercase;
-            color: $primary_white;
-
-            padding-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 55px;
-            text-transform: uppercase;
-            color: $primary_white;
-
-            padding-bottom: 60px;
-
-        }
         
+        // STILE FRECCE
+
         .slider-arrows {
             position: absolute;
             left: 0px;

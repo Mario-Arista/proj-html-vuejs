@@ -8,13 +8,13 @@ export default {
 
 <template>
 
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="row-work-with-us">
 
             <div class="with-us-text">
 
-                <h3>Collaborate</h3>
+                <h4>Collaborate</h4>
                 <h2>Want to work with us? <br>leave us a message!</h2>
                 <p>Duis sit amet congue ipsum. Nulla maximus My venenatis posuere. To the Mauris ut tempus Suspendisse porta tincidunt lectus non of me pellentesque. At A Sed blandit at diam sit amet Orci varius natosque penatibus et dis dis to parturient montes, My Car nascetur ridiculus Sed lacus in erat egestas, quis eleifend lacus imperdiet.</p>
 
@@ -62,16 +62,14 @@ export default {
     .with-us-text {
         width: 50%;
 
-        h3 {
-            text-transform: uppercase;
-            font-size: 14px;
+        h4 {
+
             color: $primary_color;
             padding-bottom: 30px;
         }
 
         h2 {
-            text-transform: uppercase;
-            font-size: 30px;
+
             color: $primary_color;
             padding-bottom: 30px;
 
@@ -80,8 +78,11 @@ export default {
         p {
             text-align: justify;
             font-size: 14px;
+            letter-spacing: 1px;
             line-height: 30px;
             color: $secondary_color;
+            font-family: "Roboto Condensed", sans-serif;
+
         }
     }
 
@@ -102,6 +103,11 @@ export default {
 
             border: none;
             border-radius: 8px;
+
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+
             background-color: $secondary_white;
             color: $secondary_color;
 
@@ -118,6 +124,11 @@ export default {
 
 
             border-radius: 8px;
+
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+
             background-color: $secondary_white;
             color: $secondary_color;
         }
@@ -128,6 +139,16 @@ export default {
             width: 100%;
 
             margin-top: 25px;
+
+            &:hover {
+
+                background-color: $secondary_color;
+
+                a {
+                color: $primary_color;
+                }
+
+            }
 
             a {
                 color: $primary_white;

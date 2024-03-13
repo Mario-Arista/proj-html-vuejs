@@ -18,7 +18,7 @@ export default {
     <div class="article">
         <img :src="BlogArticles.image" :alt="BlogArticles.title">
         <span>{{ BlogArticles.info }}</span>
-        <h3>{{ BlogArticles.title }}</h3>
+        <div>{{ BlogArticles.title }}</div>
         <p>{{ BlogArticles.recap }}</p>
     </div>
 
@@ -37,8 +37,11 @@ export default {
 
     span {
         
-        font-size: 10px;
+        font-size: 12px;
+        letter-spacing: 2px;
         color: $secondary_color;
+        font-family: "Roboto Condensed", sans-serif;
+
     }
 
     img {
@@ -47,9 +50,10 @@ export default {
 
     }
 
-    h3 {
+    div {
         text-transform: uppercase;
         font-size: 14px;
+        font-weight: bold;
         color: $primary_color;
     }
 
@@ -57,6 +61,11 @@ export default {
         
         line-height: 25px;
         color: $secondary_color;
+        font-family: "Roboto Condensed", sans-serif;
+        letter-spacing: 1px;
+        font-size: 15px;
+        text-align: justify;
+
     }
 
 }

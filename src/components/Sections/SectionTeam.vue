@@ -9,7 +9,7 @@ export default {
 
 <template>
 
-    <section class="container-fluid">
+    <section class="container">
 
         <div class="row-team">
 
@@ -64,18 +64,13 @@ export default {
     color: $primary_color;
 
     h4 {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 10px;
 
+        text-align: center;
         padding-bottom: 25px;
     }
 
     h2 {
-        text-transform: uppercase;
         text-align: center;
-        font-size: 30px;
-
         padding-bottom: 40px;
     }
 
@@ -103,12 +98,15 @@ export default {
                 font-weight: bold;
                 text-align: center;
                 font-size: 14px;
+                letter-spacing: 2px;
                 
                 padding-bottom: 15px;
             }
             .position-team-member {
                 text-align: center;
                 font-size: 12px;
+                font-family: "Roboto Condensed", sans-serif;
+                letter-spacing: 1px;
                 color: $secondary_color;
             }
 

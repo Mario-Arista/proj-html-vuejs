@@ -17,7 +17,7 @@ export default {
 
     <div class="service">
         <img :src="TypeService.image" :alt="TypeService.text">
-        <h3>{{ TypeService.text }}</h3>
+        <span>{{ TypeService.text }}</span>
         <p>{{ TypeService.description }}</p>
     </div>
 
@@ -40,16 +40,20 @@ export default {
         height: 80px;
 
     }
-    h3 {
+    span {
         text-transform: uppercase;
         font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: bold;
         color: $primary_color;
     }
 
     p {
         text-align: center;
-        line-height: 25px;
+        line-height: 30px;
+        font-size: 16px;
         color: $secondary_color;
+        font-family: "Roboto Condensed", sans-serif;
     }
 
 }

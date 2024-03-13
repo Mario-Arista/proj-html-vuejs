@@ -231,27 +231,19 @@ main {
     width: 100%;
 
     .container-services,
-    .container-works,
-    .row-blog {
+    .container-works {
 
         max-width: 1400px;
         margin: 0 auto;
         padding: 115px 0px;
 
         h4 {
-            text-transform: uppercase;
             text-align: center;
-            font-size: 10px;
-
-            padding-bottom: 35px;
         }
 
         h2 {
-            text-transform: uppercase;
-            font-size: 30px;
-            text-align: center;
 
-            padding-bottom: 65px;
+            text-align: center;
 
         }
 
@@ -271,6 +263,8 @@ main {
         .row-blog {
             display: flex;
             gap: 0px 30px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
     }

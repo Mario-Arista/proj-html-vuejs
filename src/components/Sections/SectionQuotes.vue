@@ -9,7 +9,7 @@ export default {
 
 <template>
 
-    <section class="container-fluid">
+    <section class="container for-height">
 
         <div class="row-quote">
 
@@ -50,14 +50,16 @@ export default {
     justify-content: center;
 
     width: 100%;
-
     height: 600px;
 
+    // Stile non come da progetto, ma mi da troppo fastidio vederlo in quel modo
     background-image: url('/img/quote-background.jpg');
     background-size: cover;
+    background-position: center center;
 
-    background-position-y: 240px;
-    background-position-x: 100px;
+    // Stile come da file commentato
+    // background-position-y: 250px;
+    // background-position-x: 0px;
 
     .quote {
         display: flex;
@@ -78,6 +80,8 @@ export default {
             text-align: center;
             padding-bottom: 30px;
             line-height: 25px;
+            letter-spacing: 2px;
+            font-family: "Roboto Condensed", sans-serif;
 
         }
 
@@ -96,12 +100,15 @@ export default {
 
                 .name-partner {
                     text-transform: uppercase;
-                    font-size: 12px;
+                    font-size: 14px;
+                    letter-spacing: 1px;
                     font-weight: bold;
                 }
 
                 .position-partner {
-                    font-size: 10px;
+                    font-size: 12px;
+                    font-family: "Roboto Condensed", sans-serif;
+
                 }
 
             }

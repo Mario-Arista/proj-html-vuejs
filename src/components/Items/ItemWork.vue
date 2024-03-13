@@ -17,7 +17,7 @@ export default {
 
     <div class="work">
         <img :src="SingleWork.image" :alt="SingleWork.title">
-        <h3>{{ SingleWork.title }}</h3>
+        <div>{{ SingleWork.title }}</div>
         <span>{{ SingleWork.type }}</span>
     </div>
 
@@ -41,17 +41,19 @@ export default {
         padding-bottom: 30px;
 
     }
-    h3 {
+    div {
         text-transform: uppercase;
         font-size: 14px;
+        font-weight: bold;
         color: $primary_color;
         padding-bottom: 20px;
     }
 
     span {
         text-align: center;
-        font-size: 10px;
+        font-size: 12px;
         color: $secondary_color;
+        font-family: "Roboto Condensed", sans-serif;
     }
 
 }

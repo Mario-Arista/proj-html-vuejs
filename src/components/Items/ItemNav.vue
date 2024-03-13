@@ -14,7 +14,7 @@ export default {
 
 <template>
 
-    
+    <!-- VOCI MENU PRINCIPALE -->
     <li>
         <div class="voice-menu">
             {{ Menu.title }}
@@ -22,6 +22,7 @@ export default {
              src="/public/img/icon-arrow-down.svg" alt="arrow-down icon">
         </div>
 
+         <!-- VOCI NASCOSTE DEL SUBMENU, SE PRESENTE -->
         <ul
             v-if="Menu.submenu"
         >
@@ -40,11 +41,14 @@ export default {
 
 <style lang="scss" scoped>
 
+// STYLE VOCI MENU
 .voice-menu {
     position: relative;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 1px;
 
     img {
         position: absolute;
@@ -55,9 +59,15 @@ export default {
 
 
 }
+
+// STYLE VOCI SUBMENU
+
 .voice-sub-menu {
     display: none;
     text-transform: uppercase;
+    font-size: 12px;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 1px;
 }
 
 </style>

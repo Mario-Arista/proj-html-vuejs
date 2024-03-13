@@ -9,7 +9,7 @@ export default {
 
 <template>
 
-    <section class="container-fluid">
+    <section class="container">
 
         <div class="row-about">
 
@@ -57,21 +57,12 @@ export default {
         div {
             width: 50%;
 
-            h4 {
-                padding-bottom: 30px;
-                font-size: 12px;
-                text-transform: uppercase;
-            }
-
-            h2 {
-                padding-bottom: 50px;
-                font-size: 30px;
-                text-transform: uppercase;
-            }
 
             p {
                 padding-bottom: 50px;
-                line-height: 25px;
+                font-size: 16px;
+                line-height: 30px;
+                font-family: "Roboto Condensed", sans-serif;
             }
         }
     }

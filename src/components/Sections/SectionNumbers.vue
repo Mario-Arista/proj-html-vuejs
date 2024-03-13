@@ -9,7 +9,7 @@ export default {
 
 <template>
 
-    <section class="container-fluid">
+    <section class="container">
 
         <div class="row-numbers">
 
@@ -78,15 +78,17 @@ export default {
 
             .result {
                 
-                font-size: 30px;
+                font-size: 40px;
                 font-weight: bold;
             }
 
             .text-number {
-                font-size: 10px;
+                font-size: 14px;
+                font-weight: bold;
 
                 text-transform: uppercase;
                 align-items: center;
+                white-space: nowrap;
             }
 
         }
